@@ -1,6 +1,6 @@
-# nan.ai Optical Character Recognition (OCR)
+# Nan.ai Optical Character Recognition (OCR)
 
-nan.ai  is an open source machine learning service that extracts data from form images with handwritten inputs. This ML service is created to support nan.ai, a grassroots agent platform for microinsurance. nan.ai OCR ML service can be used for other use cases such as (insert examples here) and trained using the nan.ai OCR Open Data. This ML service is tailor fit for optimizing the workflow for Saphron.asia, however, as a public good it can be reused for other  scenarios in need of OCR service.
+Nan.ai  is an open source machine learning service that extracts data from form images with handwritten inputs. This ML service is created to support Nan.ai, a grassroots agent platform for microinsurance. Nan.ai OCR ML service can be used for other use cases such as (insert examples here) and trained using the nan.ai OCR Open Data. This ML service is tailor fit for optimizing the workflow for Saphron.asia, however, as a public good it can be reused for other  scenarios in need of OCR service.
 
 nan.ai OCR ML service has three components:
 
@@ -22,17 +22,15 @@ Alongside our open source initiative, we are also open sourcing related datasets
 
 
 ## Navigate this project
-* How this works: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/HOWTO.md>
-* Sample notebooks: <link>
-* Sample data: <link>
-* Contributing guidelines: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CONTRIBUTE.md> 
-* Code of conduct: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CODEOFCODUCT.md>
+* [How this works](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/HOWTO.md)
+* [Contributing guidelines](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CONTRIBUTING.md) 
+* [Code of conduct](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CODEOFCODUCT.md)
 
 ## Resources
-* Documentation: <link>
-* Issue tracking: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/issues>
-* How to contribute data: <link>
-* nan.ai OCR Open Data: <https://github.com/Saphron-Asia/nan.ai-opendata-ocr>
+* Documentation
+* [Issue tracking](https://github.com/Saphron-Asia/nan.ai-ml-ocr/issues)
+* [How to contribute data](https://github.com/Saphron-Asia/nan.ai-opendata-ocr/blob/main/CONTRIBUTING.md)
+* [Nan.ai OCR Open Data](https://github.com/Saphron-Asia/nan.ai-opendata-ocr)
 
 ## License
 nanai-ml-ocr is licensed under the Apache License 2.0
