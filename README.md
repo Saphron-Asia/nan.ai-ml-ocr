@@ -1,6 +1,6 @@
-# nan.ai Optical Character Recognition (OCR)
+# Nan.ai Optical Character Recognition (OCR)
 
-nan.ai  is an open source machine learning service that extracts data from form images with handwritten inputs. This ML service is created to support nan.ai, a grassroots agent platform for microinsurance. nan.ai OCR ML service can be used for other use cases such as (insert examples here) and trained using the nan.ai OCR Open Data. This ML service is tailor fit for optimizing the workflow for Saphron.asia, however, as a public good it can be reused for other  scenarios in need of OCR service.
+Nan.ai  is an open source machine learning service that extracts data from form images with handwritten inputs. This ML service is created to support Nan.ai, a grassroots agent platform for microinsurance. Nan.ai OCR ML service can be used for other use cases such as (insert examples here) and trained using the nan.ai OCR Open Data. This ML service is tailor fit for optimizing the workflow for Saphron.asia, however, as a public good it can be reused for other  scenarios in need of OCR service.
 
 nan.ai OCR ML service has three components:
 
