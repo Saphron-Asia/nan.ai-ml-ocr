@@ -22,17 +22,20 @@ Alongside our open source initiative, we are also open sourcing related datasets
 
 
 ## Navigate this project
-* How this works: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/HOWTO.md>
-* Sample notebooks: <link>
-* Sample data: <link>
-* Contributing guidelines: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CONTRIBUTE.md> 
-* Code of conduct: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CODEOFCODUCT.md>
+* [How this works](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/HOWTO.md)
+* [Sample data](https://github.com/Saphron-Asia/nan.ai-opendata-ocr/tree/main/sample%20data)
+* [Contributing guidelines](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CONTRIBUTE.md) 
+* [Code of conduct](https://github.com/Saphron-Asia/nan.ai-ml-ocr/blob/main/CODEOFCODUCT.md)
 
 ## Resources
-* Documentation: <link>
-* Issue tracking: <https://github.com/Saphron-Asia/nan.ai-ml-ocr/issues>
-* How to contribute data: <link>
-* nan.ai OCR Open Data: <https://github.com/Saphron-Asia/nan.ai-opendata-ocr>
+* Documentation
+* [Issue tracking](https://github.com/Saphron-Asia/nan.ai-ml-ocr/issues)
+* [How to contribute data](https://github.com/Saphron-Asia/nan.ai-opendata-ocr/blob/main/CONTRIBUTE.md) 
+* [nan.ai OCR Open Data](https://github.com/Saphron-Asia/nan.ai-opendata-ocr)
+
+## References
+* [Word detector](https://githubharald.github.io/word_detector.html)
+* [Handwritten text recognition](https://repositum.tuwien.ac.at/obvutwoa/download/pdf/2774578)
 
 ## License
 nanai-ml-ocr is licensed under the Apache License 2.0
