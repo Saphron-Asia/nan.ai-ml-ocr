@@ -1,0 +1,60 @@
+name: Word Detector Neural Net
+
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+
+jobs:
+  pre-build:
+
+    runs-on: ubuntu-latest
+    
+    env:
+      data_dir: "OCR/word_detector_nn/data/Cardcare"
+      output_dir: "OCR"
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pylint
+          # Install dependencies on requirements file
+          find . -name "requirements.txt" -type f -exec pip3 install -r '{}' ';'        
+      - name: Analyzing the code with pylint
+        run: |
+          pylint --fail-under=7 `ls -R|grep .py$|xargs`
+      # To-do: Provide anonymized data for functional test; setup env variables
+      # - name: Run functional tests
+      #   run: |
+      #     # Use a pre-trained model
+      #     # curl -LO https://www.dropbox.com/s/mqhco2q67ovpfjq/model.zip?dl=1
+      #     # mv model.zip?dl=1 OCR/word_detector_nn/model.zip
+      #     # unzip OCR/word_detector_nn/model.zip
+      #     # Run model on sample data
+      #     python OCR/word_detector_nn/src/infer.py --data_dir ${{env.data_dir}} --output_dir ${{env.output_dir}} --device cpu
+
+  # To-do: Setup public Docker repo
+  # build:
+    
+  #   needs: pre-build
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #       name: Check out code
+
+  #     - uses: mr-smithers-excellent/docker-build-push@v5
+  #       name: Build & push Docker image
+  #       with:
+  #         image: <public-repo>/ml-ocr-test
+  #         registry: docker.io
+  #         dockerfile: OCR/word_detector_nn/Dockerfile
+  #         username: ${{ secrets.DOCKER_USERNAME }}
+  #         password: ${{ secrets.DOCKER_PASSWORD }}
+
