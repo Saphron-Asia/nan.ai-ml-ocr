@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a8cad5f5-d5d3-472f-9427-4599fb3ce374" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../word_detector_nn/src/convertToIAMFormat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/data/corpus-benthma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/data/corpus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../handwritten_text_recognition/data/corpus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/charList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/snapshot-33.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/snapshot-33.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/snapshot-33.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/model/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/../handwritten_text_recognition/model/summary.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/src/DataLoaderIAM.py" beforeDir="false" afterPath="$PROJECT_DIR$/../handwritten_text_recognition/src/DataLoaderIAM.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/src/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/../handwritten_text_recognition/src/Model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../handwritten_text_recognition/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../handwritten_text_recognition/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roi_SIFT/raw/templates/Cardcare.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roi_SIFT/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/roi_SIFT/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roi_SIFT/roi.py" beforeDir="false" afterPath="$PROJECT_DIR$/roi_SIFT/roi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_detector_nn/src/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/../word_detector_nn/src/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_detector_nn/src/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/../word_detector_nn/src/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_detector_nn/src/infer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../word_detector_nn/src/infer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_detector_nn/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/../word_detector_nn/src/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../word_detector_nn/src/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/../word_detector_nn/src/visualization.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1vhQaxuXBZ5rtlKH6oACg6ZJRoZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="roi_sans_alf" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="regions_of_interest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/roi_SIFT" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roi_SIFT/roi_sans_alf.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.roi_sans_alf" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8cad5f5-d5d3-472f-9427-4599fb3ce374" name="Default Changelist" comment="" />
+      <created>1627011908473</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627011908473</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="114" key="#Inspections" timestamp="1627273437565">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="354" y="114" key="#Inspections/0.23.1440.811@0.23.1440.811" timestamp="1627273437565" />
+    <state x="430" y="259" key="#Notifications" timestamp="1627273453644">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="430" y="259" key="#Notifications/0.23.1440.811@0.23.1440.811" timestamp="1627273453644" />
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom" timestamp="1629200913825">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1628234005430" />
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1629200913825" />
+    <state width="1419" height="205" key="GridCell.Tab.0.bottom/0.25.1440.807@0.25.1440.807" timestamp="1629179189710" />
+    <state width="1419" height="205" key="GridCell.Tab.0.center" timestamp="1629200913824">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1628234005430" />
+    <state width="1419" height="205" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1629200913824" />
+    <state width="1419" height="205" key="GridCell.Tab.0.center/0.25.1440.807@0.25.1440.807" timestamp="1629179189709" />
+    <state width="1419" height="205" key="GridCell.Tab.0.left" timestamp="1629200913824">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1628234005429" />
+    <state width="1419" height="205" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1629200913824" />
+    <state width="1419" height="205" key="GridCell.Tab.0.left/0.25.1440.807@0.25.1440.807" timestamp="1629179189708" />
+    <state width="1419" height="205" key="GridCell.Tab.0.right" timestamp="1629200913824">
+      <screen x="0" y="25" width="1440" height="804" />
+    </state>
+    <state width="1419" height="209" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1628234005430" />
+    <state width="1419" height="205" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1629200913824" />
+    <state width="1419" height="205" key="GridCell.Tab.0.right/0.25.1440.807@0.25.1440.807" timestamp="1629179189710" />
+    <state x="221" y="67" key="SettingsEditor" timestamp="1627273478253">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="221" y="67" key="SettingsEditor/0.23.1440.811@0.23.1440.811" timestamp="1627273478253" />
+  </component>
+</project>
