@@ -17,14 +17,7 @@ class FilePaths:
     # Parameters with CI/CD disabled
     fnCharList = '../model/charList.txt'
     fnSummary = '../model/summary.json'
-    # fnInfer = '/Users/joshuavillanueva/Data Analyst/UNICEF/unicef-innovations-analytics/SORTED/output_wnn/output'
     fnCorpus = '../data/corpus.txt'
-
-    # fnInfer = '../data/wide_edited.jpg'
-    # fnInfer = '../data/CARDCARESTUB1-PN0004372-2019-12-16'
-    # fnInfer = 'C:/Users/Josh/PycharmProjects/output'
-    # fnInfer can be an absolute path but must not end with a slash '/'
-    # This directory should contain the output from the Word Detector NN
 
     # CI/CD Enabled
     # fnCharList = 'OCR/handwritten_text_recognition/model/charList.txt'
