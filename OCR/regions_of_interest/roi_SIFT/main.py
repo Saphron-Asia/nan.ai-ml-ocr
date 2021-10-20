@@ -1,42 +1,39 @@
+# Utilities
+import os
+
 # Functionalities
-from file_handler import FileHandler
 from roi import RegionsOfInterest as RoI
 
 
+def create_dir(outPath, formType):
+    if not os.path.exists(outPath + '/output'):
+        os.mkdir(outPath + '/output')
+    if not os.path.exists(outPath + '/output/' + formType):
+        os.mkdir(outPath + '/output/' + formType)
+        print(f'Created {outPath}/output/{formType} directory')
+
+
+"""
+@param imgPath (String) - the filename/path to the image
+@param outPath (String)   - directory where 'output/<form_type>/<filename>.jpg' will be saved
+@param templatePath (String) - directory where templates of forms are saved
+@param formType (String) - should match the filename of saved form templates on 'templatePath'
+"""
+
+
+def main(imgPath, outPath, templatePath, formType):
+    roi = RoI(files=imgPath)
+    create_dir(outPath, formType)
+    roi.extract_ROI(file=imgPath,
+                    productType=formType,
+                    templatesPath=templatePath,
+                    outPath=outPath)
+
+
 if __name__ == '__main__':
-    # Initialize variables and classes
+    img_path = '/Users/joshuavillanueva/Data Analyst/Github/SAMPLE/Sagip/9.jpg'
+    outpath = '/Users/joshuavillanueva/Data Analyst/Github/SAMPLE'
+    tmp = '/Users/joshuavillanueva/Data Analyst/Github/SAMPLE/templates'
+    form_type = 'Sagip_2'
 
-    # Path to csv file containing alfresco data audit
-    csv_path = 'raw copy/roi-third-batch-again.csv'
-
-    # Path to jpeg files, leave blank ('') if running from the same dir
-    raw_files_path = 'raw/filtered/'
-
-    # Path to the template of the forms
-    # The directory should contain a jpg file for each product
-    # i.e. Cardcare.jpg, Kabuklod.jpg, Sagip.jpg
-    templates_path = 'raw copy/templates'
-
-    loader = FileHandler(csvPath=csv_path, debug=False)
-    roi = RoI(files=loader.files)
-
-    # --------------------------------------
-    # --------- PREPROCESSING
-    # --------------------------------------
-    # Load csv file and extract 'file' and 'filename_local' columns
-    # Store the number of identified rows
-    total_objects = loader.read_csv()
-    loader.create_dir()
-    loader.segregate(srcPath=raw_files_path)
-
-    # --------------------------------------
-    # --------- RoI Extraction
-    # --------------------------------------
-    # For every file stored in the dictionary, extract RoI
-    counter = 0
-    for key, value in loader.files.items():
-        roi.extract_ROI(file=loader.files.get(key)[0],
-                        productType=loader.files.get(key)[1],
-                        templatesPath=templates_path)
-        counter += 1
-        print(f'Progress: {"%.2f" % (counter/total_objects * 100) }%\t  Processed {counter}/{total_objects} files. ')
+    main(imgPath=img_path, outPath=outpath, templatePath=tmp, formType=form_type)
