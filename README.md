@@ -45,7 +45,7 @@ For the pre-trained model, evaluation is done using the IAM and Bentham HTR data
         1. Install tesseract on your environment: 
             1. https://tesseract-ocr.github.io/tessdoc/Compiling.html
         1. Install custom Python library (Word Beam Search) for the Handwritten Text Recognition model.
-            1. https://github.com/githubharald/CTCWordBeamSearch
+            1. https://github.com/Saphron-Asia/nan.ai-ml-ocr/tree/main/CTC%20WordBeamSearch
 3. Download pre-trained models as instructed: 
     1. [Word Detector NN](https://github.com/Saphron-Asia/nan.ai-ml-ocr/tree/main/OCR/word_detector_nn#run-demo) 
     1. [HTR](https://github.com/Saphron-Asia/nan.ai-ml-ocr/tree/main/OCR/handwritten_text_recognition#run-demo) 
