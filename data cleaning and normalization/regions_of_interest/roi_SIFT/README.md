@@ -1,4 +1,4 @@
-**Python version**: 3.8 `br`
+**Python version**: 3.8 <br>
 **OpenCV-Contrib**: 4.5.1.48
 
 ## Run the script
