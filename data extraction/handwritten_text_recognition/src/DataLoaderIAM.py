@@ -52,11 +52,12 @@ class DataLoaderIAM:
                 continue
 
             lineSplit = line.strip().split(' ')
-            assert len(lineSplit) >= 9
+            # assert len(lineSplit) >= 9
 
             # filename: part1-part2-part3 --> part1/part1-part2/part1-part2-part3.png
             fileNameSplit = lineSplit[0].split('-')
-            fileName = data_dir / 'img' / fileNameSplit[0] / f'{fileNameSplit[0]}-{fileNameSplit[1]}' / lineSplit[0] + '.png'
+            print(f'fileNameSplit == {fileNameSplit}')
+            fileName = data_dir / 'img' / fileNameSplit[0] / f'{fileNameSplit[0]}-{fileNameSplit[1]}' / lineSplit[0] + '.jpeg'
 
             if lineSplit[0] in bad_samples_reference:
                 print('Ignoring known broken image:', fileName)

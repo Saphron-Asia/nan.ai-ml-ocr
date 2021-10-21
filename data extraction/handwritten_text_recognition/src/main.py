@@ -11,18 +11,19 @@ from Model import Model, DecoderType
 from SamplePreprocessor import preprocess
 from FileLoader import FileLoader
 
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 class FilePaths:
     "filenames and paths to data"
+    # Parameters with CI/CD disabled
     fnCharList = '../model/charList.txt'
     fnSummary = '../model/summary.json'
-    # fnInfer = '../data/wide_edited.jpg'
-    fnInfer = '../data/CARDCARESTUB1-PN0004372-2019-12-16'
-    # fnInfer can be an absolute path but must not end with a slash '/'
-    # This directory should contain the output from the Word Detector NN
-    # fnInfer = '../output'
     fnCorpus = '../data/corpus.txt'
+
+    # CI/CD Enabled
+    # fnCharList = 'OCR/handwritten_text_recognition/model/charList.txt'
+    # fnSummary = 'OCR/handwritten_text_recognition/model/summary.json'
+    # fnInfer = ''
+    # fnCorpus = 'OCR/handwritten_text_recognition/data/corpus.txt'
 
 
 def write_summary(charErrorRates, wordAccuracies):
@@ -127,6 +128,7 @@ def main():
                         help='CTC decoder')
     parser.add_argument('--batch_size', help='batch size', type=int, default=100)
     parser.add_argument('--data_dir', help='directory containing IAM dataset', type=Path, required=False)
+    parser.add_argument('--fn_infer', help='directory containing input data for OCR', type=Path, required=False)
     parser.add_argument('--fast', help='use lmdb to load images', action='store_true')
     parser.add_argument('--dump', help='dump output of NN to CSV file(s)', action='store_true')
     args = parser.parse_args()
@@ -158,19 +160,23 @@ def main():
             model = Model(loader.charList, decoderType, mustRestore=True)
             validate(model, loader)
 
-    # infer text on test image
+    # infer text on input image
     else:
+        # Set fnInfer dir
+        FilePaths.fnInfer = args.fn_infer
         model = Model(open(FilePaths.fnCharList).read(), decoderType, mustRestore=True, dump=args.dump)
 
         # Scan directories containing images
         parent_dirs = [f.name for f in os.scandir(FilePaths.fnInfer) if f.is_dir()]
 
         for parent_dir in parent_dirs:
+            print(parent_dirs)
             sub_dirs = [f.name for f in os.scandir(FilePaths.fnInfer + '/' + parent_dir) if f.is_dir()]
             dir_progress = 0
 
             for subDir in sub_dirs:
                 curr_dir = FilePaths.fnInfer + '/' + parent_dir + '/' + subDir
+                print(f'Curr dir: {curr_dir}')
                 imgLoader = FileLoader(Path(curr_dir))
                 numImages = len(imgLoader.getImages())
 
@@ -183,7 +189,7 @@ def main():
                     print("Inferring image: " + imgPath)
                     word, proby = infer(model, imgPath)
                     imgLoader.appendResToJson(i, imgPath, word, proby)
-                    # print(f'Progress:  {"%.2f" % ((i+1)/numImages * 100)}% \t Processed {i+1}/{numImages} images. ')
+                    print(f'Progress:  {"%.2f" % ((i+1)/numImages * 100)}% \t Processed {i+1}/{numImages} images. ')
                     cumSum += proby
                     i += 1
 

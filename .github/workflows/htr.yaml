@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      fnInfer: "OCR/handwritten_text_recognition/data/sample"
+      fnInfer: "data extraction/handwritten_text_recognition/data/sample"
 
     steps:
       - uses: actions/checkout@v2

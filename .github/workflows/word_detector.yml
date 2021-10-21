@@ -11,7 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      data_dir: "OCR/word_detector_nn/data/Cardcare"
+      # Add sample data on this dir
+      data_dir: "data extraction/word_detector_nn/data/Cardcare"
       output_dir: "OCR"
 
     steps:
